@@ -4,11 +4,16 @@ import { useLocation } from 'react-router-dom'
 const ProductDetail = () => {
     const location = useLocation()
     console.log(location.state)
+    const data = location.state
     const {id} = useParams()
     console.log(id)
 
   return (
-    <div>ProductDetail</div>
+    <div>
+      <img src={data.img} alt="product"  />
+      <h1>{data.name}</h1>
+      <h2>{data.price}</h2>
+    </div>
   )
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Media = () => {
+  const navigate = useNavigate();
   const data = [
     {
       id: 1,
@@ -93,23 +95,13 @@ const Media = () => {
                 fontWeight: "bold",
                 color: "#21ABE2",
                 marginTop: "15px",
+                cursor:"pointer"
               }}
+              onClick={() => navigate(`/detail/${item.id}`, {state:item})}
             >
               Buy Now
             </button>
-            <button
-              style={{
-                border: "1px solid#21ABE2",
-                padding: "10px",
-                width: "100%",
-                background: "white",
-                fontSize: "18px",
-                fontWeight: "bold",
-                color: "#21ABE2",
-              }}
-            >
-              Add to Cart
-            </button>
+            
           </div>
         ))}
       </div>

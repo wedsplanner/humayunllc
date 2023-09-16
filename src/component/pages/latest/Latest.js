@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineHeart } from "react-icons/ai";
+
 import { useNavigate } from "react-router-dom";
 import "./latest.css";
 
@@ -63,7 +63,7 @@ const Latest = () => {
 
         <div className="latestCards">
           {data.map((item) => (
-            <div className="latestCard" onClick={() => navigate(`/detail/${item.id}`, {state:item})} style={{cursor:"pointer"}} >
+            <div className="latestCard" >
               <div 
               style={{ display: "flex", position: "relative" }}
               >
@@ -125,24 +125,14 @@ const Latest = () => {
                   fontSize: "18px",
                   fontWeight: "bold",
                   color: "#21ABE2",
-                  marginTop:"15px"
+                  marginTop:"15px",
+                  cursor:"pointer"
                 }}
+                onClick={() => navigate(`/detail/${item.id}`, {state:item})}
               >
                 Buy Now
               </button>
-              <button
-                style={{
-                  border: "1px solid#21ABE2",
-                  padding: "10px",
-                  width: "100%",
-                  background: "white",
-                  fontSize: "18px",
-                  fontWeight: "bold",
-                  color: "#21ABE2",
-                }}
-              >
-                Add to Cart
-              </button>
+              
             </div>
           ))}
         </div>
