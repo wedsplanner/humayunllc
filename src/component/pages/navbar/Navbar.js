@@ -2,11 +2,13 @@ import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import logo from "../../../assets/images/logo.jpg";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light p-4">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
+          <img src={logo} alt="logo" width={60} height={50}/>
           <b>Humayun LLC</b>
         </a>
         <button
