@@ -10,7 +10,14 @@ import Beauty from "./component/pages/beauty/Beauty";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        display: "grid",
+        gridTemplateRows: "1fr auto",
+        minHeight: "100vh",
+      }}
+    >
       <Navbar />
       <Routes>
         <Route>
