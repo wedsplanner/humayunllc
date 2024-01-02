@@ -37,6 +37,13 @@ const Navbar = () => {
             </li> */}
             <li className="nav-item">
               <b>
+                <a className="nav-link px-2" aria-current="page" href="/pet-supplies">
+                  Pet Supplies
+                </a>
+              </b>
+            </li>
+            <li className="nav-item">
+              <b>
                 <a className="nav-link px-2" aria-current="page" href="/baby">
                   Baby
                 </a>

@@ -14,7 +14,7 @@ const Footer = () => {
         <b>Contact: </b> (386) 951-4245
       </div>
       <div>
-        <b>Email: </b> (386) shop@humayunllc.com
+        <b>Email: </b>sales@humayunllc.com
       </div>
     </div>
   );

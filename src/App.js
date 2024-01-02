@@ -7,6 +7,7 @@ import ProductDetail from "./component/pages/productDetail/ProductDetail";
 import Footer from "./component/pages/footer/Footer";
 import Toys from "./component/pages/toys/Toys";
 import Beauty from "./component/pages/beauty/Beauty";
+import PetSupplies from "./component/pages/petSupplies/PetSupplies";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route>
           <Route path="/" element={<Home />} />
           <Route path="/baby" element={<Gaming />} />
+          <Route path="/pet-supplies" element={<PetSupplies />} />
           <Route path="/health" element={<Media />} />
           <Route path="/toys" element={<Toys />} />
           <Route path="/beauty" element={<Beauty />} />
